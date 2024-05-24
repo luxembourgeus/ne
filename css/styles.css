@@ -1,0 +1,78 @@
+@font-face {
+	font-family: "Outfit", sans-serif;;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-25CA;
+}
+
+html {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+  position: relative;
+  font-weight: normal;
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+	text-decoration: none;
+	color: #000;
+	cursor: pointer !important;
+}
+
+a:hover {
+	cursor: pointer !important;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	text-align: left;
+	-webkit-font-smoothing: antialiased;
+	position:relative;
+	height: auto;
+	font-weight: normal;
+}
+
+#home {
+	font-family: "Outfit", sans-serif;;
+	font-size: 212px;
+	line-height: 0.90em;
+	padding: 120px 0px 120px 75px; /* top right bottom left */
+	margin: 0 0 0px 0; /* top right bottom left */
+	width: calc(100% - 150px);
+	height: auto;
+	background-color: #fff;
+	z-index: 5;
+	position: relative;
+	letter-spacing: -0.05em;
+}
+
+#home a:link,
+#home a:visited,
+#home a:active {
+	color:#999;
+}
+
+#home a:hover {
+	text-decoration: none; /* You can specify other styles here if needed */
+    color: #FF2400; /* This will change the text color to red on hover */
+}
+
+.hover-effect:hover::after {
+    content: "(neither arrogant nor ignorant enough to call myself expat)";
+    color: #FF2400;
+    position: relative;
+    background-color: transparent;
+    padding: 0px;
+    border: 0px solid #000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+}
+
