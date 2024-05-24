@@ -1,4 +1,4 @@
-/* Add this to your CSS file (style.css) */
+/* Keyframes for fadeInUp animation */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -10,6 +10,7 @@
     }
 }
 
+/* Animates element with fadeInUp animation */
 .fadeInUp {
     opacity: 0; /* Start with the element hidden */
     animation-name: fadeInUp;
@@ -17,12 +18,13 @@
     animation-fill-mode: forwards; /* Keep the end state of the animation */
 }
 
-/* Basic */
+/* Reset default margin and padding */
 * {
     margin: 0;
     padding: 0;
 }
 
+/* Basic styling */
 html,
 body,
 .Container {
@@ -30,10 +32,12 @@ body,
     font-family: "Outfit", sans-serif;
 }
 
+/* Body background color */
 body {
     background-color: #FFF;
 }
 
+/* Styling for links */
 a:link,
 a:hover,
 a:visited {
@@ -41,58 +45,14 @@ a:visited {
     color: #000;
 }
 
+/* Paragraph styling */
 p {
     color: #000;
     font-family: "Outfit", sans-serif;
     font-size: 1.2rem;
 }
 
-/* Navbar */
-.navbar-dark .navbar-nav .nav-link {
-    color: #000;
-}
-
-.navbar-dark .navbar-nav .nav-link:focus,
-.navbar-dark .navbar-nav .nav-link:hover {
-    color: #555;
-}
-
-.navbar .navbar-collapse {
-    text-align: center;
-}
-
-.navbar-brand {
-    padding-top: 0;
-}
-
-.nav-item {
-    font-size: 1.2rem;
-}
-
-@media (min-width: 990px) {
-    .navbar-brand {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        max-height: 40px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .navbar-brand-centered {
-        position: absolute;
-        left: 50%;
-        display: block;
-        width: 100%;
-        text-align: center;
-    }
-    .navbar>.container .navbar-brand-centered,
-    .navbar>.container-fluid .navbar-brand-centered {
-        margin-left: -50%;
-    }
-}
-
-/* Half Page */
+/* Half Page layout */
 .Container:before {
     content: '';
     height: 100%;
@@ -128,12 +88,14 @@ p {
     overflow: auto;
 }
 
+/* Media query for larger screens */
 @media (min-width: 1200px) {
     .Wrapper>div {
         height: 100%;
     }
 }
 
+/* Styling for split images */
 .split-image-left {
     background-size: contain;
     background-position: center;
@@ -145,12 +107,13 @@ p {
     padding-bottom: 10rem;
 }
 
+/* Signature styling */
 .signature {
     padding-top: 2rem;
     height: 6rem;
 }
 
-/* Contact Form */
+/* Styling for contact form */
 .contact-form .btn-primary {
     color: #fff;
     background-color: #000;
