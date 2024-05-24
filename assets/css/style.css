@@ -138,11 +138,6 @@ p {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
-}
-
-.background-1 {
-    background-image: url("../img/cannes.jpg");
 }
 
 .split-image-right {
