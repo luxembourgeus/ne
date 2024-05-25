@@ -18,23 +18,13 @@
     animation-fill-mode: forwards; /* Keep the end state of the animation */
 }
 
-/* Reset default margin and padding */
-* {
-    margin: 0;
-    padding: 0;
-}
-
 /* Basic styling */
 html,
 body,
 .Container {
     height: 100%;
     font-family: "Outfit", sans-serif;
-}
-
-/* Body background color */
-body {
-    background-color: #FFF;
+    text-align: center; /* Center align text in .Container */
 }
 
 /* Styling for links */
@@ -50,6 +40,7 @@ p {
     color: #000;
     font-family: "Outfit", sans-serif;
     font-size: 1.2rem;
+    text-align: left; /* Right align text in paragraphs */
 }
 
 /* Half Page layout */
@@ -82,10 +73,15 @@ p {
     float: left;
     margin: 0;
     padding: 0;
+    text-align: left; /* Left align text in .LeftContent */
 }
 
 .RightContent {
     overflow: auto;
+    margin: 0;
+    padding: 0;
+    text-align: right; /* Right align text in .RightContent */
+
 }
 
 /* Media query for larger screens */
@@ -95,51 +91,7 @@ p {
     }
 }
 
-/* Styling for split images */
-.split-image-left {
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
 .split-image-right {
     padding-top: 10rem;
     padding-bottom: 10rem;
-}
-
-/* Signature styling */
-.signature {
-    padding-top: 2rem;
-    height: 6rem;
-}
-
-/* Styling for contact form */
-.contact-form .btn-primary {
-    color: #fff;
-    background-color: #000;
-    border-color: #000;
-}
-
-.contact-form .form-control {
-    color: #000;
-    background-color: transparent;
-    border-color: #000;
-    border-width: 0 0 2px 0;
-    border-radius: 0;
-    border-style: solid;
-    font-size: 1.5rem;
-}
-
-.form-control::-webkit-input-placeholder {
-    color: #000;
-    opacity: 0.6;
-}
-
-.form-control {
-    padding: 1.5rem 16rem 1.5rem 0.75rem;
-}
-
-.contact-form .btn {
-    padding: 0.8rem 4rem;
-    border-radius: 5px;
 }
